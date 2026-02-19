@@ -1,0 +1,363 @@
+body
+{
+	background-color: #bbccde;
+}
+
+/* для альбомной ориентации телефона */
+@media (min-width: 640px) and (max-width:768px) 
+{
+    body 
+    {
+        font-size: 10px;
+    }
+
+    #buttonPuzzle button
+	{
+		width: 100px;
+  		height: 100px;
+  	}
+
+  	.imageSelection
+  	{
+  		width: 100%;	
+  	}
+
+  	#banner
+  	{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;  
+		margin-top: 0px;
+	}	
+
+	#gameWrapper
+	{
+   		display: flex;
+    	justify-content: center;
+    	align-items: flex-start;
+    	gap: 5px;
+    	margin-top: 2px;
+	}
+
+	#controlButtons
+	{
+    	display: flex;
+    	flex-direction: column;
+    	gap: 5px;
+	}
+
+    #update, #mainScreen
+	{ 
+    	width: 60px;
+   		height: 60px;
+   	}
+
+   	#textSize
+	{
+		font-family: cursive;
+		font-size: 40px;
+		color: #353f36;
+	}
+
+	#home 
+	{ 
+		width: 80%;
+		height: 50%;
+		margin-left: 10%;
+		padding-left: 10%;
+    	margin-top: 5%;
+	}
+
+}
+
+/* для декстопов-компьютеров */
+@media (min-width:769px) 
+{
+    body 
+    {
+        margin-top: 25px;
+        font-size: 150px;
+    }
+
+    #buttonPuzzle button
+	{
+		width: 1000px;
+  		height: 1000px;
+  	}
+
+  	#banner
+  	{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;  
+		margin-top: 0px;
+	}
+
+	#update, #mainScreen
+	{ 
+    	width: 300px;
+   		height: 300px;
+   	}
+
+   	#home 
+	{ 
+		width: 70%;
+		height: 35%;
+		margin-left: 15%;
+    	margin-top: 10%;
+	}
+
+	#textSize
+	{
+		font-family: cursive;
+		font-size: 180%;
+		color: #353f36;
+	}
+
+}
+
+/* для книжной ориентации телефона */
+@media (min-width:320px) and (max-width:480px) 
+{
+    body 
+    {
+        font-size: 15px;
+    }
+
+    #buttonPuzzle button
+	{
+		width: 150px;
+  		height: 150px;
+  	}
+
+  	.imageSelection
+  	{
+  		width: 100%;
+  		height: 150%;
+  		border-right: 9px dashed #BF2233;
+  	}
+  		
+  	#banner
+  	{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;  
+		margin-top: 100px;
+	}
+
+	#gameWrapper
+    {
+       	flex-direction: column;
+       	align-items: center;
+       	margin-top: 1px;
+   	}
+
+    #controlButtons
+    {
+       	flex-direction: row;
+       	justify-content: center;
+        margin-top: 1px;
+    }
+
+    #update, #mainScreen
+    {
+    	text-align: center;
+       	width: 70px;
+        height: 70px;
+    }
+
+    #home 
+	{ 
+		width: 70%;
+		height: 10%;
+		margin-left: 10%;
+		padding-left: 10%;
+    	margin-top: 25%;
+	}
+
+	#textSize
+	{
+		font-family: cursive;
+		font-size: 45px;
+		color: #353f36;
+	}
+}
+
+#myCanvas 
+{
+  	background: transparent;
+  	top: 5%;
+  	left: 15%;
+}
+
+#playPuzzle
+{
+	top: 15px;
+	font-family: Verdana;
+	text-align: center;
+	color: #414833;
+	display: block;
+}
+
+#timer
+{
+	font-family: cursive;
+	font-size: 100%;
+	color: #353f36;
+}
+
+#buttonPuzzle 
+{
+    display: flex;
+    position: relative;
+    gap: 25px;
+    flex-direction: column; 
+    z-index: 10;
+    margin-top: 10%;
+}
+
+#buttonPuzzle button
+{  
+    border: none;
+   	padding: 0;
+	background-color: transparent;
+	background-size: contain;
+   	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}	
+
+#buttonPuzzle button:hover
+{
+	background-color: transparent;
+	transform: rotate(15deg);	
+}
+
+#playButton8 { background-image: url('assets/button8.png'); }
+#playButton18 { background-image: url('assets/button18.png'); }
+#playButton32 { background-image: url('assets/button32.png'); }
+#playButton72 { background-image: url('assets/button72.png'); }
+
+#update
+{
+	background-image: url('assets/update.png');
+}
+
+#mainScreen 
+{
+	background-image: url('assets/mainScreen.png');
+}
+	 
+#update, #mainScreen
+{
+    border: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    cursor: pointer;
+}		
+
+#update:hover, #mainScreen:hover
+{
+	transform: scale(1.2);
+}
+
+#gameWrapper
+{
+   	display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 2px;
+}
+
+#controlButtons
+{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#home 
+{ 
+	background-image: url('assets/home.png');
+	border: 4px double #353f36;
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+	cursor: pointer;
+    position: absolute;
+    text-align: center; 
+}
+
+#home:hover
+{
+	background-image: url('assets/home2.png');
+	transform: translate(-7px);
+	border: 4px double #ebe2db;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#nav
+{
+	font-family: cursive;
+	background-color: #93a491;
+	border-top: 2px double #353f36;
+	border-bottom: 2px double #353f36;
+}
+
+#nav li
+{
+	float: left;
+	list-style-type: none;
+}
+
+#nav a
+{
+	display: block;
+	color: #353f36; 
+	padding: 15px 20px;
+	text-decoration: none;
+	border-right: 2px double #353f36;
+}
+
+#nav li:last-child a
+{
+	border-right: none;
+}
+
+#nav a:hover
+{
+	font-weight: bold;
+}
+
+#nav:after
+{
+	content: " ";
+	display: table;
+	clear: both;
+}
+	
+#banner
+{
+	text-align: center;
+    aspect-ratio: 16 / 9;
+    background-image: url(assets/logo1.png);
+    background-repeat: no-repeat;
+   	background-size: contain;
+    background-position: center;
+    animation-name: logoAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes logoAnimation 
+{
+   	0%   { background-image: url(assets/logo1.png); opacity: 1; }
+    45%  { opacity: 0; }
+    55%  { opacity: 0; }
+    100% { background-image: url(assets/logo2.png); opacity: 1; }
+}

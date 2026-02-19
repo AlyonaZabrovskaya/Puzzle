@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="styles.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Puzzle</title>
+</head>
+<body>
+	<div id="playPuzzle">
+		<div id="buttonPuzzle" style="display: none;">
+			<h1 id="textSize">Количество элементов картины:</h1>
+    		<button id="playButton8" class="choosingSize"></button>
+    		<button id="playButton18" class="choosingSize"></button>
+    		<button id="playButton32" class="choosingSize"></button>
+   			<button id="playButton72" class="choosingSize"></button>
+		</div>
+
+		<div id="nav">
+			<ul class="imageSelection">
+				<li>
+					<a href="#" id="vers1">Природа</a>
+				</li>
+				<li>
+					<a href="#" id="vers2">Животные</a>
+				</li>
+				<li>
+					<a href="#" id="vers3">Хобби</a>
+				</li>
+				<li>
+					<a href="#" id="vers4">Цветы</a>
+				</li>
+				<li>
+					<a href="#" id="vers5">Искусство</a>
+				</li>
+				<li>
+					<a href="#" id="vers6">Сказка</a>
+				</li>
+				<li>
+					<a href="#"  id="vers7">Абстракция</a>
+				</li>
+				<li>
+					<a href="#" id="vers8">Еда</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="gameWrapper">
+    		<canvas id="myCanvas" style="display: none;"></canvas>
+   			 <div id="controlButtons" style="display: none;">
+        		<button id="update"></button>
+        		<button id="mainScreen"></button>
+    		</div>
+		</div>
+
+		<div id="timer" style="display: none;"></div>
+		<button id="home" style="display: none;"></button>
+	</div>
+			
+		<div id="banner">
+			<div class="logo1"></div>
+			<div class="logo2"></div>
+		</div> 
+
+		<script src="script.js" defer> </script>
+</body>
+</html>
